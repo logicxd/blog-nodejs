@@ -1,6 +1,12 @@
-# Make a Blog with Markdown using NodeJS
+---
+title:  "Make a Blog with Markdown using NodeJS"
+date:   2018-09-03
+updatedDate: 2018-09-06
+category: NodeJS
+urlName: make-a-blog-with-markdown-using-nodejs
+---
 
-This will be a tutorial to show you how to add a blogging feature to your NodeJS application. [This blog](http://www.aungmoe.net/blogs/nodejs/2018/09/03/make-a-blog-with-markdown-using-nodejs) itself was generated through methods that you'll see in this tutorial. Your blogs will be able to support: 
+This will be a tutorial to show you how to add a blogging feature to your NodeJS application. You basically add your Markdown pages to the project (sorry, we won't add a text editor) and your NodeJS will generate your HTML blogs. This blog itself was generated through methods that you'll see in this tutorial. Your blogs will be able to support: 
 * Dynamic rendering of Markdowns to HTML upon server startup.
 * Metadata for each of the Markdown.
 * Syntax highlighting.
@@ -220,9 +226,19 @@ module.exports = app;
 ```
 
 ### Problems/Issues
-##### My Markdown pages are not updating!
+
+<h5><b>How to add an editor to make these Markdown pages?</b></h5>
+
+This tutorial does not have a text editor for Markdowns - I didn't plan on using an editor so I haven't looked too much into it :(.
+You can try looking into [StackEdit](https://stackedit.io/app) and see if that helps!
+
+<h5><b>My Markdown pages are not updating!</b></h5>
+
 The way it is currently set up, the Markdown pages will only be rendered from Markdown to HTML when you first start your NodeJS application. So you will need to restart your NodeJS to see your latest changes.
 
-##### How can we save the rendered HTML as static pages?
+<h5><b>How can we save the rendered HTML as static pages?</b></h5>
+
 From our example, you can get the HTMl generated from Markdown by calling `md.render(rawMd)`. After that, you can use NodeJS's file output operations from `fs` to store them as you like. Here's a [link](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback) to point you to a direction.
+
+
 
