@@ -1,10 +1,4 @@
----
-title:  "Make a Blog with Markdown using NodeJS"
-date:   2018-09-03
-updatedDate: 2018-09-06
-category: NodeJS
-urlName: make-a-blog-with-markdown-using-nodejs
----
+# blog-nodejs
 
 This will be a tutorial to show you how to add a blogging feature to your NodeJS application. You basically add your Markdown pages to the project (sorry, we won't add a text editor) and your NodeJS will generate your HTML blogs. This blog itself was generated through methods that you'll see in this tutorial. Your blogs will be able to support: 
 * Dynamic rendering of Markdowns to HTML upon server startup.
